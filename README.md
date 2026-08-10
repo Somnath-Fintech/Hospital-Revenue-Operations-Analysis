@@ -173,14 +173,14 @@ Hospital-Revenue-Operations-Analysis/
 │   └── postgre_ERD.png
 |
 ├── SQL/
-|    ── images
+|   ├── images
 │   ├── 01_database_setup_final.sql
 │   ├── 02_revenue_analysis_final.sql
 │   ├── 03_appointment_analysis_final.sql
 │   ├── 04_patient_treatment_analysis_final.sql
 │   └── 05_branch_doctor_analysis_final.sql
 │
-├── dateset/
+├── dataset/
 │   ├── appointments.csv
 │   ├── billing.csv
 │   ├── doctors.csv
