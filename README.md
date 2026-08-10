@@ -133,7 +133,7 @@ The final dashboard contains five analytical pages.
 - Top Treatment
 - Highest Revenue Age Group
 
-The `.pbix` file is available in the [`powerbi`](powerbi/) folder.
+The `.pbit` file is available in the [`powerbi`](powerbi/) folder.
 
 ---
 
