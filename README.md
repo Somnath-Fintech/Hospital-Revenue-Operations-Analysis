@@ -163,25 +163,33 @@ Based on the final dashboard:
 Hospital-Revenue-Operations-Analysis/
 │
 ├── Dashboard/
-│   ├── ERD.png
 │   ├── page_1_overview.png
 │   ├── page_2_financial.png
 │   ├── page_3_appointments.png
 │   ├── page_4_branch_doctor.png
 │   └── page_5_patient_treatment.png
 │
+├── Database/
+│   └── postgre_ERD.png
+|
 ├── SQL/
-│   ├── 01_database_setup.sql
-│   ├── 02_revenue_analysis.sql
-│   ├── 03_appointment_analysis.sql
-│   ├── 04_patient_treatment_analysis.sql
-│   └── 05_branch_doctor_analysis.sql
+|    ── images
+│   ├── 01_database_setup_final.sql
+│   ├── 02_revenue_analysis_final.sql
+│   ├── 03_appointment_analysis_final.sql
+│   ├── 04_patient_treatment_analysis_final.sql
+│   └── 05_branch_doctor_analysis_final.sql
 │
-├── dataset/
-│   └── ...
+├── dateset/
+│   ├── appointments.csv
+│   ├── billing.csv
+│   ├── doctors.csv
+│   ├── patients.csv
+│   └── treatments.csv
 │
 ├── powerbi/
-│   └── Hospital_Revenue_Operations_Analysis.pbix
+│   └── Hospital Revenue & Operations Analysis.pbit
+|   └── PowerBi_Data_Model.PNG
 │
 └── README.md
 ```
