@@ -14,15 +14,16 @@ The goal was to turn relational hospital data into a set of business-focused ana
 
 The analysis focuses on questions such as:
 
-- How much revenue was generated, collected, and left outstanding?
-- Which branches generated the highest revenue?
-- Which payment methods contributed the most outstanding revenue?
-- How large is the unattended appointment problem?
-- Which appointment reasons and shifts show higher cancellation/unattendance?
-- Which doctors and branches perform best?
-- Which treatments and age groups generate the most revenue?
-- Which patient locations contribute the most billing value?
-- How do completed visits vary by season?
+- How much revenue was generated, collected, and left outstanding in the year?  [View](SQL/images/Total_Sale_Due_Received_bills.PNG)
+- Which branches generated the highest revenue? [View](SQL/images/Highest_earning_Branch.PNG)
+- Which payment methods contributed the most outstanding revenue?  [View](SQL/images/Payment_Method_with_the_highest_pending.PNG)
+- How large is the unattended appointment problem?  [View](SQL/images/unattended_appointment_issue.PNG)
+- Which appointment reasons and shifts show higher cancellation/unattendance?  [View](SQL/images/appointment_outcome_by_reason.PNG)
+- Which doctors and branches perform best?  [View](SQL/images/most_valuabe_doctors_branch_wise.PNG)
+- Which treatments and age groups generate the most revenue?  [View](SQL/images/Top_treatments.PNG) [View](SQL/images/highest_revenue_age_group.PNG)
+- Which patient locations contribute the most billing value?  [View](SQL/images/Top_earning_locations.PNG)
+- How do completed visits vary by season?  [View](SQL/images/Visits_by_season.PNG)
+- What is the difference in value between the bill and the treatment amount?  [View](SQL/images/Treatment_Cost_vs_billing_amount.PNG)
 
 ---
 
@@ -49,7 +50,7 @@ The relationships connect patients to appointments and billing, doctors to appoi
 
 ### Entity Relationship Diagram
 
-![Database ERD](Dashboard/ERD.png)
+![Database ERD](Database/postgre_ERD.png)
 
 ---
 
@@ -75,7 +76,6 @@ The SQL analysis covers:
 16. Branch revenue analysis
 17. Doctor performance by branch
 18. Experience vs revenue analysis
-19. Duplicate-record checks
 
 See the [`SQL`](SQL/) folder for the query files.
 
@@ -85,7 +85,7 @@ See the [`SQL`](SQL/) folder for the query files.
 
 The final dashboard contains five analytical pages.
 
-### 1. Hospital Revenue & Operations
+### 1. Hospital Revenue & Operations [View](Dashboard/page_1_overview.png)
 
 - Total Revenue
 - Paid Revenue
@@ -99,7 +99,7 @@ The final dashboard contains five analytical pages.
 - Monthly Revenue Trend
 - Revenue by Branch
 
-### 2. Hospital Financial Analysis
+### 2. Hospital Financial Analysis [View](Dashboard/page_2_financial.png)
 
 - Monthly Revenue vs Due Revenue
 - Quarterly analysis using slicer/bookmark interactions
@@ -108,7 +108,7 @@ The final dashboard contains five analytical pages.
 - Due Revenue by Payment Method
 - Key financial insights
 
-### 3. Patients & Appointments Analysis
+### 3. Patients & Appointments Analysis [View](Dashboard/page_3_appointments.png)
 
 - Monthly Appointments vs Unattended %
 - Shift-wise Cancelled Appointments
@@ -116,7 +116,7 @@ The final dashboard contains five analytical pages.
 - Top Doctors by Unattended Appointments
 - Appointment and patient KPIs
 
-### 4. Branch & Doctor Performance
+### 4. Branch & Doctor Performance [View](Dashboard/page_4_branch_doctor.png)
 
 - Branch Revenue Performance over Time
 - Due Revenue by Branch
@@ -124,7 +124,7 @@ The final dashboard contains five analytical pages.
 - Doctor Revenue vs Completed Appointments
 - Top Branch and Top Doctor KPIs
 
-### 5. Patient & Treatment Insights
+### 5. Patient & Treatment Insights [View](Dashboard/page_5_patient_treatment.png)
 
 - Revenue by Treatment
 - Revenue by Age Group
@@ -227,7 +227,7 @@ Business Insights
 - Line and combo charts
 - Donut charts
 - Scatter plot
-- Slicers / bookmarks
+- Slicers 
 - Conditional formatting
 - Dashboard layout and storytelling
 
@@ -238,6 +238,15 @@ Business Insights
 - Time/season categorisation
 - Sorting logic
 
+
+## 👤 Author
+
+**Somnath Maity**
+
+## 🔗 Connect
+
+- [LinkedIn](https://www.linkedin.com/in/somnath-maity-fintech/)
+- [GitHub](https://github.com/Somnath-Fintech)
 ---
 
 ## Notes
@@ -246,3 +255,4 @@ This repository contains the SQL analysis, database structure, Power BI dashboar
 
 If the dataset contains real patient information, personally identifiable information must be removed or anonymized before publishing the repository publicly.
 
+---
